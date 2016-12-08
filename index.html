@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Star Wars RPG Game</title>
+
+  <!-- You can use Bootstrap to make game look nicer (or style it yourself) -->
+  <!-- <link rel="stylesheet" href=""> -->
+
+<!-- Google Font -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+</style>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Star Wars RPG Game</h1>
+    <p class="lead">This is a modified jumbotron that occupies
+                    the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
+<div class="row">
+<div class="container">
+
+<button type="button" class="btn btn-primary" id="reyButton"><img src="assets/images/rey.jpg" class="img-fluid" alt="Responsive image"><span id="reyHP"></span></button>
+
+<button type="button" class="btn btn-primary" id="darthButton"><img src="assets/images/darthsidious.jpg" class="img-fluid" alt="Responsive image"><span id="darthHP"></span></button>
+
+<button type="button" class="btn btn-primary" id="finnButton"><img src="assets/images/finn.jpg" class="img-fluid" alt="Responsive image"><span id="finnHP"></span></button>
+
+<button type="button" class="btn btn-primary" id="padmeButton"><img src="assets/images/padme.jpg" class="img-fluid" alt="Responsive image"><span id="padmeHP"></span></button>
+
+</div>
+</div>
+
+<div class="row">
+<div class="container" id="playerSelected">
+<h2>Your Character</h2>
+</div>
+</div>
+
+<div class="row">
+<div class ="container" id="enemiesAvailable">
+<h2>Enemies Available to Attack</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="container" id="fightSection">
+<h2>Fight Section</h2>
+<button>Attack</button>
+</div>
+</div>
+
+<div class="row">
+<div class="container" id="currentDefender">
+<h2>Defender</h2>
+</div>
+</div>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
